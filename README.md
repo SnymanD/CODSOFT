@@ -1,2 +1,2 @@
 # CODSOFT
-The project of my Internship with CodSoft
+The projects of my Internship with CodSoft
