@@ -1,12 +1,14 @@
-""" A To-Do List application is a useful project that helps users manage
-and organize their tasks efficiently
-This project aims to create a command-line or GUI-based application using Python, allowing
-users to create, update, and track their to-do lists
-"""
+# Program: To Do List Application
+# 
+# Description: This project aims to create a command-line or GUI-based application using Python, allowing
+#              users to create, update, and track their to-do lists
+#
+# Author: DHLAMINI SNYMAN @ https://www.github.com/SnymanD
 
 tasks = []
 
 
+# A function for listing all the tasks in the to-do-list
 def track_tasks():
     if not tasks:
         print("____Currently you do not have any tasks____")
@@ -16,12 +18,14 @@ def track_tasks():
             print(f"{index}. {task}")
 
 
+# Function for adding new tasks
 def create_tasks():
     task = input("Please Enter A New Task: ").capitalize()
     tasks.append(task)
     print(f"'{task}' is added on your list.")
 
 
+# Function to delete tasks
 def remove_tasks():
     track_tasks()
 
@@ -37,6 +41,7 @@ def remove_tasks():
 if __name__ == "__main__":
 
     print("Welcome to To-Do-List app")
+    print("--------------------------")
     while True:
         print("")
         print("Select One Of The Following Options: ")
@@ -54,7 +59,6 @@ if __name__ == "__main__":
         elif choice == 3:
             remove_tasks()
         elif choice == 4:
-            quit()
-
-else:
-    print("Bye, enjoy the rest of your day!")
+            break
+        
+print("Bye!")
